@@ -11,4 +11,10 @@ setup(
     download_url='https://github.com/cstorm125/thai_sentiment/archive/refs/tags/v0.1.0.tar.gz',
     keywords=['sentiment analysis', 'thai', 'nlp'],
     classifiers=[],
+    install_requires=[
+        'pythainlp',
+        'sklearn',
+        'pickle',
+        'scipy',
+    ],
 )
