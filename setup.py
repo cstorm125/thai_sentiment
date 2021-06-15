@@ -17,4 +17,5 @@ setup(
         'pickle',
         'scipy',
     ],
+    include_package_data=True,
 )

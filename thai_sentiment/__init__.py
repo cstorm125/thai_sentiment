@@ -20,10 +20,10 @@ class CustomUnpickler(pickle.Unpickler):
 thai_sentiment_path = Path(os.path.dirname(thai_sentiment_file))
 labels = ["pos", "neu", "neg"]
 
-MODEL_URL = "https://github.com/cstorm125/thai_sentiment/raw/main/thai_sentiment/pretrained/nbsvm_c3_l2_dual.pkl"
-ENC_URL = "https://github.com/cstorm125/thai_sentiment/raw/main/thai_sentiment/pretrained/tfidf_wisesight_sentiment.pkl"
-urllib.request.urlretrieve(MODEL_URL, thai_sentiment_path / 'pretrained/nbsvm_c3_l2_dual.pkl')
-urllib.request.urlretrieve(ENC_URL, thai_sentiment_path / 'pretrained/tfidf_wisesight_sentiment.pkl')
+# MODEL_URL = "https://github.com/cstorm125/thai_sentiment/raw/main/thai_sentiment/pretrained/nbsvm_c3_l2_dual.pkl"
+# ENC_URL = "https://github.com/cstorm125/thai_sentiment/raw/main/thai_sentiment/pretrained/tfidf_wisesight_sentiment.pkl"
+# urllib.request.urlretrieve(MODEL_URL, thai_sentiment_path / 'pretrained/nbsvm_c3_l2_dual.pkl')
+# urllib.request.urlretrieve(ENC_URL, thai_sentiment_path / 'pretrained/tfidf_wisesight_sentiment.pkl')
 
 with open(thai_sentiment_path / 'pretrained/tfidf_wisesight_sentiment.pkl', 'rb') as f:
     tfidf = pickle.load(f)
