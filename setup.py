@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='thai_sentiment',
     packages=['thai_sentiment'],
-    version='v0.1.0',  # Ideally should be same as your GitHub release tag varsion
+    version='v0.1.1',  # Ideally should be same as your GitHub release tag varsion
     description='The naive sentiment classification function based on NBSVM trained on wisesight_sentiment',
     author='cstorm125',
     author_email='cebril@gmail.com',
