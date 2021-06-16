@@ -4,7 +4,7 @@ The naive sentiment classification function based on NBSVM trained on [wisesight
 ## วิธีติดตั้ง
 
 ```
-pip install thai_sentiment
+pip install thai_sentiment==0.1.3
 ```
 
 ## วิธีใช้
